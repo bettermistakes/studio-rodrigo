@@ -59,6 +59,15 @@ function randomDuration(min, max) {
 function randomLoopDuration(min, max) {
   return gsap.utils.random(min, max)
 }
+/* 
+  selectArray(id, arrayType) function: Returns the specific array needed for the random symbol src attribute
+  to be selected from.
+  1. Takes in an id & one of 2 arrayType(s) as params: arrayType can be "full" (including default letters) or 
+  "justSymbols".
+  2. To normalise the footer id difference we first strip the "f" from them.
+  3. Then the simple switch maps the letter id to its corresponding array, whether full or symbols.
+  4. Once matched, the function returns that array.
+*/
 function selectArray(id, arrayType){
   let currentSvgEl = document.querySelector(`#${id}`);
 
