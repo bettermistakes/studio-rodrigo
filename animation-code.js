@@ -2,6 +2,7 @@
 /************************************************ 
                Variables & Arrays
 *************************************************/
+
 // Arrays - Corresponding to each character & the defaults.
 const rArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45164a994fbe148dd8_R_2.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f465af55d45479cf765_R_7.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f466b0a24588994c31e_R_6.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f46f70e343c378d6f1b_R_5.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f456b0a24f92694c31d_R_4.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f4533943e105f44e4ae_R_1.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f4543c5476509cb3d7a_R_3.svg"]
 const oArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f456b0a24014994c31b_O_7.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f453eb659b33a283a23_O_9.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f453eb6593100283a22_O_8.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45c6cf6a77ebb16b35_O_4.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f455810581359e3a6a4_O_6.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f4543c54751f4cb3d79_O_3.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f4512ec1c7c128ab15a_O_5.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45f666f0acb8abbe1e_O_2.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45690e4a65f4a874dd_O_1.svg"]
@@ -9,12 +10,14 @@ const dArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45
 const iArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45b9baec4169ca47ea_I_5.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45b9baecdfdfca47e8_I_4.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f4512ec1c8e8a8ab158_I_2.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f45650eb07bcc82d6d9_I_3.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f4482526481b59a94b1_I_1.svg"]
 const gArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f44415c66877b4948c7_G_4.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f44403e4c502f265d3b_G_3.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f4430f9613b9319da21_G_2.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c18f443eb659c3d6283a21_G_1.svg"]
 const defaults = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875d4177627e2d29e69a_R.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875bf4a7f8241bbc2096_O.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875b3486b63c4a44475f_D.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875b33943e0bc0446002_G.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875b403e4c341f25d9cf_I.svg"]
+
 //Arrays with all symbols and default font characters.
 const rFArr = rArr.concat("https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875d4177627e2d29e69a_R.svg");
 const oFArr = oArr.concat("https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875bf4a7f8241bbc2096_O.svg");
 const dFArr = dArr.concat("https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875b3486b63c4a44475f_D.svg");
 const iFArr = iArr.concat("https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875b403e4c341f25d9cf_I.svg");
 const gFArr = gArr.concat("https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c1875b33943e0bc0446002_G.svg");
+
 // White SVG Arrays - Corresponding to each character & the defaults.
 const rWArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625e739f8d61a5ba578c_letter-R-Flowers.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625ea9b6a0728e89ca4e_letter-R-Starburst.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625d8ec26458f7650b6e_letter-R-Circle%20Blend.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625d2378568dda704ca4_letter-R-Medium%20Dots.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625d8c9bf2c01806654e_letter-R-Simple%20Filled%20Shapes.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625df6343e8d42a27c41_letter-R-Clouds.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625d32910a50d5d74c75_letter-R-Maze.svg"]
 const oWArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622de9a211ae2e9ce868_letter-O-Cursors.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622d23785684677045d1_letter-O-Venn.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622d739f8d6f62ba5632_letter-O-Flowers.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622d7ae2254e1d6662d1_letter-O-Wavy.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622d9bcbb43ecf9eacc0_letter-O-Blur.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622d73b2b68248e93387_letter-O-Clouds.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622d3b2b764cf4c37fc9_letter-O-Square%20Negative.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622d965a123273a95362_letter-O-Starburst.svg"]
@@ -22,51 +25,64 @@ const dWArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c561f
 const iWArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5621a9f1b45d182d5fce3_letter-I-Simple%20Outlined%20Shapes.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c56218ce5aa2124ef17dfe_letter-I-Flowers.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c56218ad4d63575b0d6ecc_letter-I-Starburst.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c562188cd0756df5277eca_letter-I-Maze.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c56218d06f10836c890142_letter-I-Clouds.svg"]
 const gWArr = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5620bf6343e816fa2735e_letter-G-Simple%20Outlined%20Shapes.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5620bd3f6693a8e7f7560_letter-G-Maze.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5620b965a124e1ea95250_letter-G-Flowers.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5620b7ae22524fe666172_letter-G-Circle%20Blend.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5620be76650634df4e778_letter-G-Clouds.svg"]
 const Wdefaults = ["https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5625d72da9e2e3534ac15_letter-R-Default.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5622de9a211284d9ce869_letter-O-Default.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c56218f8fb9d4be95cd9a1_letter-I-Default.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c5620b99f3af760f7b3e92_letter-G-Default.svg", "https://uploads-ssl.webflow.com/6391c0af21c27966e0a10682/63c561f572da9e34cc34a17b_letter-D-Default.svg"]
+
 // An Array of each of the non-default symbol arrays.
 const arrOfArrays = [rArr, oArr, dArr, iArr, gArr]
+
 // An Array of each of the full arrays.
 const arrOfFArrays = [rFArr, oFArr, dFArr, iFArr, gFArr]
+
 // Array of the element ids written as strings.
 const arrOfIds = ['r1', 'o1', 'd1', 'r2', 'i1', 'g1', 'o2'];
+
 // Mega array of all symbols and characters
 let megaArray = [];
 for (let i=0; i<arrOfFArrays.length; i++){
   megaArray = megaArray.concat(arrOfFArrays[i]);
 }
+
 const footerSymbols = document.querySelectorAll('.f-symbol');
-// Pre-set Delay variables - Change at will - Time in seconds.
+
+// Preset Delay variables - Change at will - Time in seconds.
 var delayGlobal = 0.2;
 var delaySlower = 0.4;
 var delayFaster = 0.1;
 var delayNone = 0;
-// Pre-set Duration ranges - Change at will - Time in seconds.
+
+// Preset Duration ranges - Change at will - Time in seconds.
 var durationStandard = randomDuration(100,300);
 var durationSlower = randomDuration(500,800);
 var durationFaster = randomDuration(30,80);
 var durationHugeVariation = randomDuration(30,2000);
+
 /************************************************ 
                     Functions
 *************************************************/
+
 // Returns a single item at random from any array passed to the function
 function randomArrItemSelection(array){
   return gsap.utils.random(array)
 }
+
 // Returns a random duration in seconds between a min & max number of miliseconds
 function randomDuration(min, max) {
   return gsap.utils.random(min, max) / 1000
 }
+
 // Returns a random duration in miliseconds between a min & max number of miliseconds
 function randomLoopDuration(min, max) {
   return gsap.utils.random(min, max)
 }
+
 /* 
   selectArray(id, arrayType) function: Returns the specific array needed for the random symbol src attribute
   to be selected from.
   1. Takes in an id & one of 2 arrayType(s) as params: arrayType can be "full" (including default letters) or 
   "justSymbols".
   2. To normalise the footer id difference we first strip the "f" from them.
-  3. Then the simple switch maps the letter id to its corresponding array, whether full or symbols.
-  4. Once matched, the function returns that array.
+  3. Gets the colour of the svg characters using the svgcolor attribute.
+  4. Then the simple switch maps the letter id to its corresponding array, whether full or symbols, and determined by colour as well.
+  5. Once matched, the function returns that array.
 */
 function selectArray(id, arrayType){
   let currentSvgEl = document.querySelector(`#${id}`);
@@ -157,6 +173,23 @@ function selectArray(id, arrayType){
   }
   return svgArray
 }
+
+/*
+createTween Function: 
+Creates a tween for a particular element id with a random svg and random duration.
+  1. Inits an svgArray variable.
+  2. Calls the selectArray() function passing in the id, arrayType, durationSpeed & delaySpeed variables.
+  3. Embedded getSrc() Function:
+    1. Inits 2 variables: 1. Grabs the current on-page element connected with the id passed in.
+                          2. Uses the randomArrItemSelection() Function to randomly select an item from the 
+                             associated array (set using switch statement) and stores it in the randomSrc variable.
+    2. Runs a while loop that checks if the current on page element src is identical to the randomly selected source, 
+    and if they are the same, it re-runs the randomisation function until it selects a different symbol src. It then 
+    returns that item.
+  4. The createTween() returns a gsap "tween" (short animation) that targets the id passed in and changes the src.
+     attribute by calling the getSrc() embedded function described above. It sets a duration using the randomDuration()
+     function passing in a min & max duration in miliseconds. It sets an optional delay using pre-defined variables.
+*/
 function createTween(id, arrayType, durationSpeed, delaySpeed){
   let svgArray = selectArray(id, arrayType)
   function getSrc(){
@@ -176,6 +209,23 @@ function createTween(id, arrayType, durationSpeed, delaySpeed){
       ease: "none",
       })
 }
+
+/* 
+createTimeline(type) Function: Creates a timeline of type "symbols" or "default"
+  1. Takes in type, arrayType, durationSpeed & delaySpeed variables as params.
+  2. Inits id variable & idsUsedArr array. 
+  3. Inits a new empty gsap timeline and stores it in a tl variable. 
+  4. Inits tweenToAddToTl variable.
+  5. Starts a while loop that runs until the idsUsedArray contains 7 items.
+    1. Randomly selects an id from the array of ids and saves it in the id variable.
+    2. Runs an if statement to check that the selected id is not already in the idsUsedArr array.
+       If it's not already there, puts that id in the array.
+    3. Checks if the timeline "type" is "symbols" or "default".
+    4. Creates the corresponding tween using the createTween() function and passing in the randomly selected id.
+    5. Immediately adds that tween to the timeline saved in the tl variable.
+    6. Continues until the timeline has all 7 characters filled by random symbols / letters.
+  6. Returns the tl (timeline).   
+*/
 function createTimeline(type, arrayType, durationSpeed, delaySpeed){
   let id;
   let idsUsedArr = [];
@@ -191,6 +241,15 @@ function createTimeline(type, arrayType, durationSpeed, delaySpeed){
   }
   return tl
 }
+
+/*
+createDefaultTween(id, durationSpeed, delaySpeed) Function: Creates a tween using only default characters. 
+  1.Takes in the id, durationSpeed & delaySpeed variables as params.  
+  3.Inits the defSrc variable
+  4. Sets the src. attribute for the animation based on the id passed in. As there is only 
+     one option, this is set directly.
+  5. Returns a tween using the new src attribute.
+*/
 function createDefaultTween(id, durationSpeed, delaySpeed){
   let defSrc;
   switch (id) {
@@ -226,6 +285,7 @@ function createDefaultTween(id, durationSpeed, delaySpeed){
       ease: "none",
       })
 }
+
 /*
   function randomSymbolLoop(): Selects a random id and then selects a corresponding random symbol
     to match the id and animates that symbol onto the logo.
@@ -260,9 +320,7 @@ function setNewSrc(){
 }
 setTimeout(setNewSrc, delay )
 }
-/************************************************ 
-               Function Calls
-*************************************************/
+
 /************************************************ 
       Event Listeners / Footer Functionality
 *************************************************/
